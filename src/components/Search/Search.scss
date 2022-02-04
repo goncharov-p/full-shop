@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.082);
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.modal.active{
+    transform: scale(1);
+}
+
+.modal-content{
+    background-color: white;
+    height: 600px;
+    width: 25%;
+}
+
+.Search-Form{
+    width: 40vw;
+    height: 4vh;
+    margin: auto;
+
+    input{
+        display: flex;
+        width: 96%;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        background: url('../utils/images/SeachSVG.svg') no-repeat 3px;
+        background-color: white;
+        padding-left:30px;
+        font-family: "Raleway";   
+    }
+    ul{
+        background-color: white;
+        li{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+            // transform: rotate(-0.21deg);
+        }
+    }
+    .Autocomplete{
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        max-height: 266px;
+        overflow: auto;
+        font-family: "Raleway"; 
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); 
+        display: flex;
+        flex-direction: column;
+    }
+    .Autocomplete_Item{
+        padding: 10px;
+    }
+    .Autocomplete_Item:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: cubic-bezier(1,0,0,1) .3s all;
+    }
+
+}
+
+

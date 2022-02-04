@@ -1,0 +1,171 @@
+.rnc__notification-container--top-right{
+    position: relative;
+    .notification{
+        .rnc__notification-item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Raleway';
+                font-weight: 500;
+                width: 9.5vw;
+                height: 3.5vh;
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-sizing: border-box;
+                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+                border-radius: 4px;
+
+            .rnc__notification-message{
+                color: black;
+            }
+        }
+    }
+  }
+
+  
+
+.Product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60vh;
+    width: 85%;
+    margin: 3vh 0 0 3.4vw;
+    
+
+
+    .Product-card{
+        margin: 1.5% 0% 0% 1.5%;
+        width: 15vw;
+        height: 34vh;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        position: relative;
+
+        .Product-card-description{
+            opacity: 0;
+            &:hover{
+                opacity: 1;
+            }
+            position: absolute;
+            width: 100%;
+            height: 34vh;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .Product-card-description-text{
+                box-sizing: border-box;
+                width: 85%;
+                color: white;
+                font-family: 'Raleway';
+                overflow: hidden; 
+                text-overflow: ellipsis;
+                height: 40%;
+            }
+        }
+
+
+
+        .SetFavorite{
+            top: 1.7vh;
+            left: 13.2vw;
+            width: 2vw;
+            height: 2vh;
+            position:absolute;
+
+            .setFavorite-text{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Raleway';
+                font-weight: 500;
+                z-index: 1;
+                width: 9vw;
+                height: 3.5vh;
+                position: relative;
+                top: -6vh;
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-sizing: border-box;
+                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+                border-radius: 4px;
+            }
+            .setFavorite-text-test{
+                display: none;
+            }
+        }
+
+         
+
+        .Product-card-img-div{  
+            margin-top: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 85%;
+            height: 60%;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            
+            .Product-card-image{
+                width: 8vw;
+                height: 8vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 12vw;
+                    height: 18vh;
+                }
+            }
+        }
+
+        .Product-card-img-div:hover{
+                img{ width: 40vw;
+                }
+
+        }
+
+
+        .Product-card-text{
+            margin-top: 6%;
+            width: 85%;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            align-items: flex-end;
+            text-align: justify;
+
+            .Product-card-text-div{
+                width: 100%;
+            }
+
+            .Product-card-text-price{
+                padding-top: 4%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    color: #999A1C;
+                }
+                svg{
+                    width: 2.4vw;
+                    height: 2.4vh;
+                } 
+            }
+       }
+
+      
+
+    }
+}

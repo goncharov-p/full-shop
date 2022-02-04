@@ -1,0 +1,228 @@
+.Basket {
+  height: 100vh;
+  width: 100vw;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  .basket-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100vw;
+    .basket-back-svg {
+      position: relative;
+      left: 1vw;
+      bottom: 35vh;
+      svg {
+        height: 4vh;
+        width: auto;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .your-basket {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+      border-radius: 40px;
+      width: 80vw;
+      height: 75vh;
+      h1 {
+        font: italic 600 5vh "Raleway";
+        width: 75vw;
+      }
+      .basket-select-all-products {
+        display: flex;
+        align-items: center;
+        height: 5vh;
+        width: 70vw;
+        .basket-all-checkbox {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 2vh;
+          width: 1vw;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          box-sizing: border-box;
+          border-radius: 4px;
+          &:hover {
+            cursor: pointer;
+          }
+          svg {
+            height: 1vh;
+            width: auto;
+          }
+        }
+        label {
+          font: italic 200 3vh "Raleway";
+          margin-left: 1vw;
+        }
+      }
+      .basket-product-list {
+        height: 40vh;
+        width: 70vw;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .basket-item-div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: white;
+          border-radius: 4px;
+          height: 10vh;
+
+          strong {
+            color: #999a1c;
+            margin-left: 0.5vw;
+          }
+          .basket-checkbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4vh;
+            width: 2vw;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin: 0 2vw;
+            &:hover {
+              cursor: pointer;
+            }
+            svg {
+              height: 2vh;
+              width: auto;
+            }
+          }
+          .basket-product-svg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 8vh;
+            width: 4vw;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin-right: 3vw;
+            svg {
+              height: 4.5vh;
+              width: auto;
+              margin: 0;
+            }
+          }
+          .basket-product-name {
+            font: italic 200 4.5vh "Raleway";
+            width: 20vw;
+          }
+          .basket-svg-div {
+            width: 4vw;
+            &:hover {
+              cursor: pointer;
+            }
+            svg {
+              height: auto;
+              width: 1.5vw;
+              margin: 0 1.5vw;
+            }
+          }
+          .basket-item-count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6vh;
+            width: 6vh;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            background-color: white;
+            span {
+              font: italic 700 3vh "Raleway";
+            }
+          }
+          p {
+            margin-left: 1vw;
+            font: italic 600 2.5vh "Raleway";
+          }
+          h2 {
+            font: italic 600 4.5vh "Raleway";
+            width: 14vw;
+            text-align: center;
+            margin: 0;
+          }
+        }
+        .basket-grey {
+          background: rgba(0, 0, 0, 0.2);
+          .basket-checkbox {
+            background-color: white;
+          }
+          .basket-product-svg {
+            background-color: white;
+          }
+        }
+      }
+      .basket-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 10vh;
+        width: 70vw;
+        p {
+          font: italic 500 4vh "Roboto";
+          margin-left: 6vw;
+          strong {
+            color: #999a1c;
+            margin-left: 2vw;
+          }
+        }
+      }
+      .basket-button-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 70vw;
+        button {
+          font: italic 600 3vh "Raleway";
+          color: #999a1c;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          box-sizing: border-box;
+          border-radius: 4px;
+          padding: 0.2vh 2vw;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .basket-paid {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+      width: 80vw;
+      height: 75vh;
+      h1 {
+        font: italic 600 4vh "Raleway";
+        color: #999a1c;
+      }
+      .basket-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        p {
+          margin: 0 2vw;
+          font: italic 600 2.5vh "Raleway";
+          text-decoration: underline;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

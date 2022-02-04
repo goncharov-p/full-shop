@@ -1,0 +1,118 @@
+.AdminPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  .admin-page-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    width: 100vw;
+    .admin-page-search-sort {
+      display: flex;
+      justify-content: flex-start;
+      width: 70vw;
+      height: 5vh;
+    }
+    .admin-page-products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw;
+      height: 75vh;
+      margin-top: 2vh;
+      background-color: white;
+      border-radius: 40px;
+      .admin-page-list {
+        margin-top: 3vh;
+        height: 60vh;
+        width: 75vw;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        font: normal 300 2.5vh "Raleway";
+        text-align: center;
+        .admin-page-list-head {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 10vh;
+          background: rgba(0, 0, 0, 0.2);
+          p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          svg {
+            height: 3vh;
+            width: auto;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .admin-page-list-body {
+          width: 100%;
+          height: 50vh;
+          .admin-page-product-grey {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+          div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 5vh;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            .admin-page-item-svg {
+              width: 5%;
+              border: none;
+              svg {
+                height: 3vh;
+                width: auto;
+                margin-left: 1vw;
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .admin-page-product-id {
+          width: 7.5%;
+        }
+        .admin-page-product-name {
+          width: 30%;
+        }
+        .admin-page-product-price {
+          width: 20%;
+        }
+        .admin-page-product-popularity {
+          width: 20%;
+        }
+        .admin-page-product-date {
+          width: 12.5%;
+        }
+      }
+      .admin-page-products-footer {
+        margin-top: 2vh;
+        width: 75vw;
+        .admin-page-add-new {
+          display: flex;
+          align-items: center;
+          font: normal 500 2vh "Raleway";
+          width: 13vw;
+          &:hover {
+            cursor: pointer;
+          }
+          svg {
+            height: 3.5vh;
+            width: auto;
+            margin: 0 1vw 0 0.75vw;
+          }
+        }
+      }
+    }
+  }
+}

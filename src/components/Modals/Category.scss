@@ -1,0 +1,54 @@
+
+.Categories-modal-img{
+    position: absolute;
+    left: 4.8vw;
+}
+
+.Category-modal{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 16.4vw;
+    height: 85vh;
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 40px 0px 0px;
+
+
+    .Category-modal-svg{
+        padding-top: 12%;
+        width: 90%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .Category-modal-categories{
+        top: 2vh;
+        left: 0vh;
+        position: relative;
+        padding-left: 10%;
+        h2{
+            font: italic 200 4vh "Raleway";
+        }
+
+        h3{
+            font: normal 300 3vh "Raleway";
+        }
+
+        .Categories-list-text{
+            display: flex;
+            flex-direction: column;
+            font:  normal 300 2.5vh "Raleway";
+            .Span-category-one{
+                padding-left: 5%;
+            }
+
+            .Span-category-another{
+                padding: 5% 0% 0% 5%;
+            }
+           
+        }
+    }
+}

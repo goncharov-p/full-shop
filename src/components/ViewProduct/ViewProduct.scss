@@ -1,0 +1,209 @@
+.container-product {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  .product-info {
+    padding-top: 2%;
+    width: 80%;
+    display: flex;
+    align-content: content;
+    .column-image {
+      padding-left: 5%;
+      width: 40%;
+      .product-image {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        margin-top: 5%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        max-width: 400px;
+        svg {
+          width: auto;
+          height: 24vh;
+        }
+      }
+    }
+    .column-info {
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      width: 50%;
+      .head-product {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 3%;
+        h2 {
+          margin: 0;
+          font-family: "Raleway";
+          font-style: italic;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 56px;
+        }
+        svg {
+          width: 41px;
+          height: auto;
+        }
+      }
+      p {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 3%;
+      }
+      .price-info {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10%;
+        .counter-buy {
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          svg {
+            margin-right: 10%;
+          }
+          .krug {
+            margin-right: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background: white;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            span {
+              margin: 0;
+              font-family: "Raleway";
+              font-style: italic;
+              font-weight: bold;
+              font-size: 26px;
+              line-height: 28px;
+            }
+          }
+        }
+        .quantity-price {
+          width: 50%;
+          .quantity-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .quantity,
+            .number-quantity {
+              font-family: "Roboto";
+              font-style: italic;
+              font-weight: bold;
+              font-size: 28px;
+              line-height: 28px;
+              padding: 5% 0;
+            }
+            .number-quantity {
+              color: #999a1c;
+            } line-height: 28px;
+            .price-info {
+                display: flex;
+                flex-direction: row;
+                .counter-buy {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    svg {
+                        margin-right: 10%;
+                    }
+                    .krug {
+                        margin-right: 10%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid rgba(0, 0, 0, 0.2);
+                        background: white;
+                        border-radius: 50px;
+                        width: 50px;
+                        height: 50px;
+                        span {
+                            margin: 0;
+                            font-family: 'Raleway';
+                            font-style: italic;
+                            font-weight: bold;
+                            font-size: 26px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+                .quantity-price {
+                    width: 50%;
+                    .quantity-row {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        .quantity, .number-quantity {
+                            font-family: 'Roboto';
+                            font-style: italic;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 28px;
+                        }
+                        .number-quantity {
+                            color: #999a1c;
+                        }
+                    }
+                    .price-row {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        .price, .number-price {
+                            font-family: 'Roboto';
+                            font-style: italic;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 28px;
+                        }
+                        .number-price {
+                            font-size: 36px;
+                            line-height: 42px;
+                            color: #999a1c;
+                        }
+                    }
+                }
+            }
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        justify-content: flex-end;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7px 0;
+          width: 200px;
+          font: italic 700 28px "Raleway";
+          color: #999a1c;
+          background-color: white;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          box-sizing: border-box;
+          border-radius: 4px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        button:last-child {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

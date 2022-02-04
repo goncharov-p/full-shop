@@ -1,0 +1,113 @@
+.Registration {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Raleway", sans-serif;
+  .HDiv {
+    height: 10vh;
+    width: 100vw;
+    padding: 2.5vh 0;
+    h1 {
+      font: italic 200 8vh "Raleway";
+      text-align: center;
+      margin: 0;
+      strong {
+        font: italic 800 8vh "Raleway";
+      }
+    }
+  }
+  .RegMain {
+    display: flex;
+    height: 85vh;
+    width: 100vw;
+
+    .RegImage {
+      height: 85vh;
+      width: 50vw;
+      display: flex;
+      justify-content: end;
+      svg {
+        position: relative;
+        left: 1.5vw;
+        height: 60vh;
+        width: auto;
+        filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
+      }
+    }
+    .RegBlock {
+      height: 85vh;
+      width: 50vw;
+      .Reg {
+        .wrong {
+          border: 2px solid red;
+          &:focus{
+            outline: none;
+          }
+        }
+        span {
+          font: normal 300 1.5vh "Raleway";
+          color: red;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        height: 83.5vh;
+        width: 30vw;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        h2 {
+          font: normal 300 5vh "Raleway";
+          margin: 2.5vh 0;
+          color: #999a1c;
+        }
+        form {
+          width: 25vw;
+          display: flex;
+          flex-direction: column;
+          label {
+            font: normal 300 2.5vh "Raleway";
+            margin: 1vh 0;
+          }
+          input {
+            height: 4vh;
+            background: #fbfbfb;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            font: normal 300 2vh "Raleway";
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 1vw;
+            &::placeholder {
+              font: normal 300 2vh "Raleway";
+              color: rgba(0, 0, 0, 0.2);
+            }
+          } 
+        }
+        .RegBottom {
+          display: flex;
+          justify-content: space-between;
+          height: 10vh;
+          width: 25vw;
+          margin-top: 2.5vh;
+          a {
+            font: italic 500 2vh "Raleway";
+            color: #999a1c;
+          }
+          button {
+            font: italic 700 2vh "Raleway";
+            color: #999a1c;
+            background-color: white;
+            height: 4vh;
+            width: 7.5vw;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            border-radius: 4px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

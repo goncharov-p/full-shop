@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.editProfile {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  h2,
+  h3 {
+    font-family: "Raleway";
+    margin: 0;
+    height: 10vh;
+    font-style: italic;
+    font-weight: 50;
+  }
+  h2 {
+    font-size: 7vh;
+  }
+  h3 {
+    font-size: 3.5vh;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    span {
+      font: normal 300 1.8vh "Raleway";
+      color: red;
+    }
+    label {
+      font: normal 500 2.5vh "Raleway";
+      padding: 3% 0;
+    }
+    .inputLine {
+      display: flex;
+      flex-direction: column;
+      .wrong {
+        border: 2px solid red;
+        &:focus {
+          outline: none;
+        }
+      }
+      input {
+        width: 30vw;
+        height: 40px;
+        background: #fbfbfb;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        font: normal 300 2vh "Raleway";
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-left: 1vw;
+        &::placeholder {
+          font: normal 300 2vh "Raleway";
+          color: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  .buttons {
+    margin-right: 3vw;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      display: flex;
+      align-items: center;
+      padding: 7px 40px;
+      font: italic 700 28px "Raleway";
+      color: #999a1c;
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    button:last-child {
+      margin-left: 20px;
+    }
+  }
+}

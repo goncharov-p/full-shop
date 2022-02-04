@@ -1,0 +1,54 @@
+.DeleteProductModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  .delete-modal-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    height: 30vh;
+    background-color: white;
+    h1 {
+      width: 35vw;
+      text-align: start;
+      margin: 0;
+      margin-top: 2vh;
+      font: normal 600 4.5vh "Raleway";
+    }
+    P {
+      width: 37.5vw;
+      text-align: start;
+      margin: 0;
+      margin-top: 2vh;
+      font: normal 300 2.5vh "Raleway";
+    }
+    .delete-modal-buttons {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      background-color: white;
+      width: 37.5vw;
+      height: 15vh;
+      display: flex;
+      button {
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 4vh;
+        width: 8vw;
+        margin: 0 0 2vh 2vw;    
+        font: normal 300 2vh "Raleway";
+        color: #999a1c;
+      }
+    }
+  }
+}
